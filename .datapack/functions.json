@@ -1,0 +1,1 @@
+{"crafters-utilities":{"$func":["objectives","runscripts"],"block-upgrades":{"hopper":{"$func":["hopper_speed_upgrade_1","hopper_speed_upgrade_2"]}},"crafting-tables":{"creation":{"$func":["circuit_crafter"]},"crafting":{"$func":["hopper_speed_upgrade_1","hopper_speed_upgrade_2","hopper_speed_upgrade_3"]}}}}
