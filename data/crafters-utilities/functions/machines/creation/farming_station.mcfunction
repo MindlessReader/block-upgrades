@@ -1,0 +1,1 @@
+execute at @e[nbt={Item:{id:"minecraft:comparator"}}] if block ~ ~-1 ~ minecraft:dropper run summon minecraft:armor_stand
