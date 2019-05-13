@@ -1,0 +1,5 @@
+execute at @e[nbt={Item:{id:"minecraft:gold_block"}}] if block ~ ~-1 ~ minecraft:dropper run summon minecraft:armor_stand ~0.38 ~ ~0.624 {Pose:{RightArm:[90f,0f,0f]},Marker:1,NoGravity:1,Invulnerable:1,Invisible:1,DisabledSlots:2039583,HandItems: [{id:"minecraft:iron_ingot", Count:1b,tag:{CustomModelData:44003}},{}],Tags:["machine_crafter"]}
+execute at @e[nbt={Item:{id:"minecraft:gold_block"}}] if block ~ ~-1 ~ minecraft:dropper run setblock ~ ~-1 ~ minecraft:dropper[facing=up]{CustomName: '{"text":"Machine Crafter"}'}
+execute at @e[nbt={Item:{id:"minecraft:gold_block"}}] if block ~ ~-1 ~ minecraft:dropper run data merge block ~ ~-1 ~ {CustomName: '{"text":"Machine Crafter"}'}
+execute as @e[nbt={Item:{id:"minecraft:gold_block"}}] at @s if block ~ ~-1 ~ minecraft:dropper run kill @s
+execute as @e[tag=machine_crafter] at @s unless block ~-0.38 ~-1 ~-0.624 minecraft:dropper run kill @s
